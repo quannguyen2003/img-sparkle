@@ -19,13 +19,21 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        surface: {
+          DEFAULT: "hsl(var(--surface))",
+          hover: "hsl(var(--surface-hover))",
+          active: "hsl(var(--surface-active))",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          hover: "hsl(var(--primary-hover))",
+          glow: "hsl(var(--primary-glow))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
+          hover: "hsl(var(--secondary-hover))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -46,17 +54,29 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+          border: "hsl(var(--card-border))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
+        code: {
+          bg: "hsl(var(--code-bg))",
+          border: "hsl(var(--code-border))",
+          text: "hsl(var(--code-text))",
+          keyword: "hsl(var(--code-keyword))",
+          string: "hsl(var(--code-string))",
+          number: "hsl(var(--code-number))",
         },
+      },
+      backgroundImage: {
+        'gradient-primary': 'var(--gradient-primary)',
+        'gradient-surface': 'var(--gradient-surface)',
+        'gradient-glow': 'var(--gradient-glow)',
+      },
+      boxShadow: {
+        'card': 'var(--shadow-card)',
+        'glow': 'var(--shadow-glow)',
+        'soft': 'var(--shadow-soft)',
+      },
+      fontFamily: {
+        mono: ['var(--font-mono)', 'monospace'],
       },
       borderRadius: {
         lg: "var(--radius)",
